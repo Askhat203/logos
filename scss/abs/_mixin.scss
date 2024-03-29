@@ -1,0 +1,7 @@
+@mixin font($s, $w, $h) {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: $s;
+    font-weight: $w;
+    line-height: $h;
+
+}

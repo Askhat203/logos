@@ -1,0 +1,96 @@
+.map {
+    iframe{
+        filter: grayscale(2) invert(20%);
+    }
+    position: relative;
+    &__card {
+        position: absolute;
+        padding: 25px 48px 24px 52px;
+        background-color: red;
+        max-width: 626px;
+        border-radius: 15px;
+        top: 11%;
+        left: 109px;
+    }
+
+    &__title {
+        @include font(30px, 600, 36px);
+        color: $title;
+    }
+
+    &__link {
+        margin-bottom: 28px;
+        margin-top: 20px;
+        display: flex;
+        align-items: start;
+        gap: 11px;
+    }
+
+    &__wrap {
+        span {
+            @include font(16px, 600, normal);
+            color: $sub;
+        }
+
+        h4 {
+            margin-top: 10px;
+            @include font(18px, 600, normal);
+            color: $title;
+        }
+    }
+
+    &__bot {
+        margin-top: 17px;
+        display: flex;
+        align-items: center;
+        gap: 33px;
+
+    }
+
+    &__btn {
+        border: 0;
+        border-radius: 10px;
+        background: linear-gradient(132.71deg, rgb(97, 137, 103) 4.895%, rgb(114, 164, 121) 95.551%);
+        @include font(13px, 600, 16px);
+        padding: 22px 30px;
+    }
+
+    &__call {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            @include font(23px, 700, 28px);
+            color: $title;
+        }
+
+        span {
+            @include font(13px, 400, 15px);
+            color: $sub;
+        }
+
+    }
+
+    &__web {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        b{
+            @include font(16px, 600, 19px);
+            color: $title;
+
+        }
+        &--wrap{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        a{
+            img{
+                width: 19px;
+                height: 19px;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.hero {
+    margin-top: 24px;
+    background: url('../imgs/menu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__title {
+        position: relative;
+        -webkit-text-stroke: 1px #fff;
+        @include font(67px, 400, 109%);
+        transform: rotate(-8deg);
+        max-width: 850px;
+        text-transform: uppercase;
+        text-align: center;
+        color: transparent;
+    }
+    &__title::after{
+        content: 'Доставка ВКУСНЕЙШИХ БЛЮд за 60 минут';
+        position: absolute;
+        color: #fff;
+        width: 100%;
+        left: 6px;
+        top: -4px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 72px 0px 144px 0px;
+        align-items: start;
+    }
+    &__btn {
+        margin-top: 60px;
+        border: 0;
+        background: rgba(97, 137, 103, 1);
+        padding: 10px 20px;
+        @include font(25px, 400, 109%);
+    }
+
+}
